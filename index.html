@@ -18,6 +18,8 @@
       font-family: Arial, sans-serif;
       margin: 0; padding: 0;
       background: linear-gradient(135deg, #0a0f3c, #2e2e2e);
+       background-size: 200% 200%;
+       animation: gradientShift 15s ease infinite;
       color: #ffffff;
     }
     header, footer {
@@ -57,7 +59,7 @@
       display: block;
     }
     .content img {
-      max-width: 600px;
+      max-width: 300px;
       width: 100%;
       height: auto;
       border-radius: 8px;
@@ -69,7 +71,13 @@
     a {
       color: #8ab4f8;
     }
-  </style>
+  
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+</style>
 </head>
 <body>
 
@@ -116,7 +124,16 @@
   <p><strong>Same-day postal shipping available.</strong></p>
 </div>
 
+
+<div style="padding: 20px; text-align: center;">
+  <h3 style="animation: neonGlow 12s infinite;">Contact & Orders</h3>
+  <p>Email: <a href="mailto:kostiantynzab@icloud.com">kostiantynzab@icloud.com</a></p>
+  <p>Complaints & Suggestions: <a href="https://t.me/print_from_ua" target="_blank">@print_from_ua</a></p>
+  <p>Orders via Telegram: <a href="https://t.me/Kostiantyn_Zabazaichenko" target="_blank">@Kostiantyn_Zabazaichenko</a></p>
+</div>
+
 <footer>
+
   <p>Contact us: <a href="mailto:your@email.com">your@email.com</a></p>
   <p>
     <a href="https://t.me/yourtelegram" target="_blank">Telegram</a> |
